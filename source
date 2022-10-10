@@ -1,0 +1,473 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://6026568227",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Infomation"
+})
+
+Tab:AddParagraph("The Script","Here you can find overpowered functions, bypasses and more. This script used to get full information of the server-game or something else. Anyways enjoy the script.")
+Tab:AddParagraph("Buttons doesn't show up.", "If buttons doesn't show up for you, then it's wrong moment. You need to be alive not dead. Also not hold any tool or you gonna get error in dev console and script may not work. But if still not work, try to reset the GUI or rejoin the server. If samething, then the script can't support for your exploit. Use paid exploits, for example synapse x, scriptware or free one - krnl, oxygen x, electron, etc.")
+Tab:AddParagraph("How do I use Textbox in GUI?", "Textbox used to change value or write player name. For example in Players Folder you need to write player name [can be shortend] or Fly Speed [Use numbers]. It's very easy, each of you will easily understand it and will use it without any trouble.")
+
+local Tab = Window:MakeTab({
+	Name = "Admins",
+	Icon = "rbxassetid://6034281908",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Reviz",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/Nh7n0hdX', true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Shattervast",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/iL4NRDux', true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fates",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Adonis",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/HYshM"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Homebrew",
+	Callback = function()
+      	_G.CustomUI = false
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Kohls",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/237ERiAT"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "IceGear",
+	Callback = function()
+loadstring(game:HttpGet(('https://paste.ee/r/e6T8l'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Overflow v3",
+	Callback = function()
+loadstring(game:HttpGet(('https://paste.ee/r/KaeZg'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Ultimate",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/bVjM0xCS", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "IV",
+	Callback = function()
+    loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\79\109\110\105\112\111\116\101\110\99\101\68\101\118\101\108\111\112\101\114\47\78\117\109\98\101\114\47\109\97\105\110\47\49\46\108\117\97'))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Game Viewers",
+	Icon = "rbxassetid://6034227061",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Dark Dex v3",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Synapse x Dark Dex",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/ViHra", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Sentinel Dex",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/RugPl", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Script Viewer",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/dva01xpE", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Script Dumper",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/6oXCo", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Synapse x Script Dumper",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/vmuSu", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Save Game",
+	Callback = function()
+      	saveinstance()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Remote Spies",
+	Icon = "rbxassetid://6035202016",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "RemoteSpy",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/9N1Fc", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "DarkSpy",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/SwZq0zCf"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "FilterShark",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/Fffa4"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "FrostHook",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/z29rx"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "EngoSpy",
+	Callback = function()
+      	local settings = {
+   saveCalls = false,
+   maxCallsSaved = 1000,
+   saveOnlyLastCall = true,
+   maxTableDepth = 100,
+   minimizeBind = Enum.KeyCode.RightAlt,
+   blacklistedNames = {}
+}
+loadstring(game:HttpGet("https://paste.ee/r/jsyu2"))(settings)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hydroxide",
+	Callback = function()
+      	local owner = "Upbolt"
+local branch = "revision"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+
+webImport("init")
+webImport("ui/main")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "MrSpy v2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/z06zN"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "SimpleSpy v2.2",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/nfHwB"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Remote Grabber",
+	Callback = function()
+      	loadstring(game:HttpGet("https://paste.ee/r/Dddcj"))()
+  	end    
+})
+
+local Player = Window:MakeTab({
+	Name = "Local Player",
+	Icon = "rbxassetid://6023426915",
+	PremiumOnly = false
+})
+
+Player:AddLabel("Player")
+
+local PlayerTarget
+local PlayerTargettwo
+
+Player:AddTextbox({
+	Name = "Player Name",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Walktofollow)
+		local Target = unpack(GetPlayer(Walktofollow))
+		PlayerTarget = Target
+	end		  
+})
+
+Player:AddToggle({
+	Name = "Walk To Player",
+	Default = false,
+	Callback = function(Walkn)
+        if Walkn == true then
+            if plr.Character:FindFirstChildOfClass('Humanoid') and plr.Character:FindFirstChildOfClass('Humanoid').SeatPart then
+		plr.Character:FindFirstChildOfClass('Humanoid').Sit = false
+		wait(.1)
+	end
+	    if WalkTo == false then
+		WalkTo = true
+		repeat wait()
+		     plr.Character:FindFirstChild("Humanoid"):MoveTo(getRoot(PlayerTarget.Character).Position)
+			 until PlayerTarget.Character == nil or not getRoot(PlayerTarget.Character) or WalkTo == false	
+	end
+		else
+		    Walkn = false
+			WalkTo = false
+		end		
+  end    
+})
+
+Player:AddToggle({
+	Name = "Pathfind Walk To Player",
+	Default = false,
+	Callback = function(Walkns)
+        if Walkns == true then
+            WalkTo = false
+	local PathService = game:GetService("PathfindingService")
+	local hum = plr.Character:FindFirstChildOfClass("Humanoid")
+	local path = PathService:CreatePath()
+	
+	if WalkTo == false then
+		WalkTo = true
+	repeat wait()
+		local success, response = pcall(function()
+			path:ComputeAsync(getRoot(plr.Character).Position, getRoot(PlayerTarget.Character).Position)
+			local waypoints = path:GetWaypoints()
+			local distance 
+			for waypointIndex, waypoint in pairs(waypoints) do
+				local waypointPosition = waypoint.Position
+				hum:MoveTo(waypointPosition)
+				repeat 
+					distance = (waypointPosition - hum.Parent.PrimaryPart.Position).magnitude
+					wait()
+				until
+				distance <= 5
+			end	 
+		end)
+		if not success then
+			plr.Character:FindFirstChildOfClass('Humanoid'):MoveTo(getRoot(PlayerTarget.Character).Position)
+		end
+		until PlayerTarget.Character == nil or not getRoot(PlayerTarget.Character) or WalkTo == false
+		end
+		else
+		    Walkns = false
+			WalkTo = false
+		end		
+  end    
+})
+
+Player:AddToggle({
+	Name = "Walk To Tool Player",
+	Default = false,
+	Callback = function(Walknss)
+        if Walknss == true then
+           if Guarding == false then
+              Guarding = true
+                    repeat wait()
+                    if getRoot(PlayerTarget.Character).Velocity.Magnitude > 0.5 and PlayerTarget.Character:FindFirstChildOfClass("Tool") then
+                       plr.Character:FindFirstChildOfClass("Humanoid"):MoveTo(getRoot(PlayerTarget.Character).CFrame.p + getRoot(PlayerTarget.Character).Velocity.unit * 7)
+                    elseif getRoot(PlayerTarget.Character).Velocity.Magnitude < 0.5 and PlayerTarget.Character:FindFirstChildOfClass("Tool") then
+		     plr.Character:FindFirstChild("Humanoid"):MoveTo(getRoot(PlayerTarget.Character).CFrame.p)
+end
+                    until PlayerTarget.Character == nil or not getRoot(PlayerTarget.Character) or not PlayerTarget.Character:FindFirstChildOfClass("Tool") or Guarding == false
+		  end
+                   
+		else
+		    Walknss = false
+            Guarding = false
+		end		
+  end    
+})
+
+Player:AddToggle({
+	Name = "Animation Steal Player",
+	Default = false,
+	Callback = function(animsteals)
+        if animsteals == true then
+            if not plr.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+               return game.StarterGui:SetCore("SendNotification", {Title = "Warning!", Text = "You can't steal in R6 games. You need to be in R15 games - R15 is required!", Duration = 5,})
+			end
+			if not PlayerTarget.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+               return game.StarterGui:SetCore("SendNotification", {Title = "Oops.", Text = "The player in R6 animation. Try to write other player target name. Your playertarget should be in R15 Animation - Player R15 is required!", Duration = 15,})
+			end
+			if PlayerTarget.Character:FindFirstChild("Animate") then
+		if plr.Character:FindFirstChild("Animate") then
+				checkifmyanim = plr.Character:FindFirstChild("animstorage")
+			if checkifmyanim then
+				local z = plr.Character:FindFirstChild("Animate")
+				if z then 
+				   z:Destroy() 
+				end
+				checkifmyanim.Name = "Animate"
+				checkifmyanim.Disabled = false
+			end
+		end
+		local z = plr.Character:FindFirstChild("Animate")
+		if z then
+			z.Name = "animstorage"
+			z.Disabled = true
+		end
+		local newanim = PlayerTarget.Character.Animate:Clone()
+		newanim.Parent = plr.Character
+		newanim.Name = "Animate"
+			end
+		else
+		    animsteals = false
+			if game.Players.LocalPlayer.Character:FindFirstChild("animstorage") then
+		if game.Players.LocalPlayer.Character:FindFirstChild("Animate") then
+			game.Players.LocalPlayer.Character:FindFirstChild("Animate"):Destroy()
+		end
+		local as = game.Players.LocalPlayer.Character:FindFirstChild("animstorage")
+		as.Name = "Animate"
+		as.Disabled = false
+		end
+		end
+  end   
+})
+
+Player:AddButton({
+	Name = "unAnchored Parts to Player",
+	Callback = function()
+      	if sethidden then
+			local Forces = {}
+			for _,part in pairs(game.Workspace:GetDescendants()) do
+				if PlayerTarget.Character:FindFirstChild("Head") and part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and not part:IsDescendantOf(plr.Character) and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then
+					for i,c in pairs(part:GetChildren()) do
+						if c:IsA("BodyPosition") or c:IsA("BodyGyro") then
+							c:Destroy()
+						end
+					end
+					local ForceInstance = Instance.new("BodyPosition")
+					ForceInstance.Parent = part
+					ForceInstance.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+					table.insert(Forces, ForceInstance)
+					if not table.find(frozenParts,part) then
+						table.insert(frozenParts,part)
+					end
+				end
+			end
+			if not simRadius then
+				SimRad()
+			end
+			for i,c in pairs(Forces) do
+				c.Position = PlayerTarget.Character.Head.Position
+			end
+		end
+	end    
+})
+
+Player:AddButton({
+	Name = "Teleport To Player",
+	Callback = function()
+      	plr.Character.HumanoidRootPart.CFrame = getRoot(PlayerTarget.Character).CFrame
+  	end    
+})
+
+Player:AddButton({
+	Name = "Vehicle Teleport to Player",
+	Callback = function()
+		if PlayerTarget.Character ~= nil then
+			local seat = plr.Character:FindFirstChildOfClass('Humanoid').SeatPart
+			local vehicleModel = seat.Parent
+			repeat
+				if vehicleModel.ClassName ~= "Model" then
+					vehicleModel = vehicleModel.Parent
+				end
+			until vehicleModel.ClassName == "Model"
+			for i,v in pairs(vehicleModel.Parent:GetDescendants()) do
+				if v:IsA("BasePart") and v.Anchored then
+					if v.Anchored == false then
+				   v:MoveTo(getRoot(PlayerTarget.Character).Position)
+					end
+				end   
+			end
+			wait(0.1)
+			vehicleModel:MoveTo(getRoot(PlayerTarget.Character).Position)
+	end
+	end    
+})
